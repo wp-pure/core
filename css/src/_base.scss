@@ -6,11 +6,11 @@ body {
 	color: $grey-dark;
 	background: lighten( $grey-light, 20% );
 
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 100%;
 
 	@include respond-to( 768px ) {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 100%;
 	}
 }

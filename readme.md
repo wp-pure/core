@@ -5,7 +5,6 @@ A custom WordPress theme framework to jumpstart new themes.
 ```shell
 cd wp-content/themes/
 composer create-project wp-pure
-composer install
 npm install
 ```
 
