@@ -1,3 +1,12 @@
-## WIHFMA's WordPress Theme
+## wp-pure
 
-&copy; 2019 WIHFMA. All rights reserved.
+A custom WordPress theme framework to jumpstart new themes.
+
+```shell
+cd wp-content/themes/
+composer create-project wp-pure
+composer install
+npm install
+```
+
+Then, to start editing, just navigate to the theme directory and run `grunt`.
