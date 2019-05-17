@@ -1,7 +1,7 @@
 {
     "name": "jpederson/wp-pure",
     "description": "A custom WordPress theme framework to jumpstart new themes.",
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
