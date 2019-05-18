@@ -80,6 +80,20 @@ img {
 	}
 }
 
+code, pre {
+	font-family: monospace;
+	background-color: #eee;
+	padding: 5px 10px;
+	font-size: 1.1em;
+	line-height: 1.4em;
+}
+
+pre {
+	max-width: 100%;
+	overflow: auto;
+	margin: 15px 0;
+}
+
 .text-center {
 	text-align: center;
 }
