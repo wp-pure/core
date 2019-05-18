@@ -13,48 +13,8 @@ function calculator_func( $atts ) {
     ), $atts );
 
 
-    // start building the calculator html/js
-
     // comparison calculator if applicable
-    if ( $a['method'] == 'scratch' ) {
-    	$a['amount'] = '';
-    	$a['term'] = '';
-    	$a['rate'] = '';
-    $calculator_code = '<div class="calculator scratch one group">
-	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
-			<input type="text" name="payment" class="payment" value="" /></div>
-	</div>
-</div><div class="calculator scratch two group">
-	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
-			<input type="text" name="payment" class="payment" value="" /></div>
-	</div>
-</div><div class="calculator scratch three group">
-	<div class="form">
-		<div class="quarter">Amount:<br>
-			<input type="text" name="amount" class="amount" value="' . $a['amount'] . '" /></div>
-		<div class="quarter">Term (months):<br>
-			<input type="text" name="term" class="term" value="' . $a['term'] . '" /></div>
-		<div class="quarter">Rate:<br>
-			<input type="text" name="rate" class="rate" value="' . $a['rate'] . '" /></div>
-		<div class="quarter">Monthly Payment:<br>
-			<input type="text" name="payment" class="payment" value="" /></div>
-	</div>
-</div>';
-    } else if ( !empty( $a['rate_compare'] ) ) {
+    if ( !empty( $a['rate_compare'] ) ) {
     $calculator_code = '<div class="calculator-compare group">
 	<div class="half form">
 		<input type="hidden" class="rate_compare" value="' . $a['rate_compare'] . '" />

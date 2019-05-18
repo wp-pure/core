@@ -18,7 +18,7 @@ function require_multi( $files ) {
 
 
 // include utility functions
-require_multi( 'menus', 'scripts', 'metabox', 'images', 'paginate' );
+require_multi( 'core', 'metabox', 'images', 'paginate' );
 
 
 // include metabox features
@@ -26,9 +26,5 @@ require_multi( 'metabox' );
 
 
 // include feature functions
-require_multi( 'showcase', 'calculator', 'boxes', 'button' );
-
-
-// add editor stylesheet
-add_editor_style( 'editor-style.css' );
+require_multi( 'showcase', 'button', 'calculator' );
 

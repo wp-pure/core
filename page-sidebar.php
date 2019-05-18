@@ -1,5 +1,9 @@
 <?php
 
+/*
+Template Name: Page w/ Sidebar
+*/
+
 get_header();
 
 the_showcase();
@@ -7,6 +11,10 @@ the_showcase();
 ?>
 
 <div class="content-wide" role="main">
+	<div class="quarter sidebar">
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?>no sidebar selected<?php endif; ?>
+	</div>
+	<div class="three-quarter">
 	<?php 
 	
 	if ( have_posts() ) :
@@ -19,6 +27,7 @@ the_showcase();
 	endif;
 
 	?>
+	</div>
 </div><!-- #content -->
 
 <?php

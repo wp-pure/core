@@ -20,8 +20,6 @@ get_header();
 		?>
 	</div>
 
-	<?php the_boxes(); ?>
-
 <?php
 
 get_footer();

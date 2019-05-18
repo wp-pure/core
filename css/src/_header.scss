@@ -64,7 +64,6 @@ header {
 					font-size: 20px;
 					line-height: 24px;
 					color: white;
-					text-align: center;
 					text-decoration: none;
 					text-transform: uppercase;
 					width: 100%;
@@ -84,7 +83,7 @@ header {
 
 				&:hover, &.open {
 					a {
-						background-color: rgba( lighten( $grey-light, 20% ), .4 );
+						background-color: $grey;
 					}
 
 					ul.sub-menu {
@@ -98,13 +97,14 @@ header {
 					display: none;
 					margin-bottom: 3px;
 					box-shadow: 0 20px 20px rgba( $grey-light, .4 );
+					opacity: .9;
 
 					@include respond-to( $bp-m ) {
 						position: absolute;
 						left: 0;
-						top: 55px;
+						top: 54px;
 						width: 100%;
-						background-color: rgba( lighten( $grey-light, 5% ), .8 );
+						background-color: $grey;
 						@include clearfix;
 					}
 
@@ -113,21 +113,21 @@ header {
 						width: 100%;
 
 						a {
-							padding: 8px 20px;
 							font-size: 15px;
 							line-height: 18px;
 							display: block;
+							padding: 10px 5px;
 
 							@include respond-to( $bp-m ) {
-								padding: 15px 10px;
+								padding: 10px;
 
 								&:hover {
-									// background: rgba( $purple, 1 );
+									background-color: lighten( $grey, 10% );
 								}
 							}
 
-							@include respond-to( 1220px ) {
-								padding: 15px 10px;
+							@include respond-to( $bp-l ) {
+								padding: 10px 15px;
 							}
 						}
 					}

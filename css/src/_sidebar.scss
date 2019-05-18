@@ -1,0 +1,36 @@
+
+
+.quarter.sidebar {
+	@include respond-to( 768px ) {
+		padding-top: 20px;
+		margin-left: -12px;
+	}
+	
+	.widget-title {
+		font-size: 1em;
+		line-height: 1em;
+		padding: 3px 12px;
+	}
+
+	.widget_nav_menu {
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				padding: 0;
+
+				a {
+					display: block;
+					padding: 4px 12px;
+
+					&:hover {
+						background-color: #eee;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -5,6 +5,8 @@
 
 get_header();
 
+the_showcase();
+
 ?>
 
 	<div class="content-wide" role="main">
