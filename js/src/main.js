@@ -38,7 +38,8 @@ jQuery(document).ready(function($){
 
 
 	// open magnific-popup when people click a certain class.
-	$( '.lightbox' ).magnificPopup({ 'type': 'iframe' });
+	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
+	$( '.lightbox' ).magnificPopup({ 'type': 'image' });
 
 });
 
