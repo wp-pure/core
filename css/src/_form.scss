@@ -97,8 +97,9 @@ button, input[type=submit] {
 		}
 
 		&.donate-note {
-			font-size: .9em;
-			margin-top: -10px;
+			font-size: .8em;
+			margin-top: -10px !important;
+			margin-bottom: 20px !important;
 		}
 	
 		@include respond-to( 768px ) {
