@@ -95,6 +95,11 @@ button, input[type=submit] {
 				}
 			}
 		}
+
+		&.donate-note {
+			font-size: .9em;
+			margin-top: -10px;
+		}
 	
 		@include respond-to( 768px ) {
 			&.donate-type {
