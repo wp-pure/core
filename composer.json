@@ -8,8 +8,5 @@
             "name": "James Pederson",
             "email": "james@jpederson.com"
         }
-    ],
-    "require": {
-        "cmb2/cmb2": "^2.6"
-    }
+    ]
 }
