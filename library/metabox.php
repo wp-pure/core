@@ -1,11 +1,6 @@
 <?php
 
 
-// init cmb2
-require_once( 'cmb2/init.php' );
-
-
-
 // add metabox(es)
 function page_metaboxes( $meta_boxes ) {
 
@@ -143,6 +138,3 @@ function cmb2_metabox_show_on_template( $display, $meta_box ) {
 }
 add_filter( 'cmb2_show_on', 'cmb2_metabox_show_on_template', 10, 2 );
 
-
-
-?>

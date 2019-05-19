@@ -61,6 +61,3 @@ function the_showcase() {
 	}
 }
 
-
-
-?>

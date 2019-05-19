@@ -26,4 +26,3 @@ register_sidebar( array(
     'after_title' => '</h4></div>',
 ) );
 
-
