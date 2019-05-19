@@ -21,6 +21,8 @@
 	text-align: center;
 	background-color: $grey;
 	color: white;
+	-webkit-appearance: none;
+	border-radius: 0;
 
 	&:hover {
 		text-decoration: none;

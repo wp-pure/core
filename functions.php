@@ -12,19 +12,11 @@ define( "CMB_PREFIX", "_p_" );
 // require multiple
 function require_multi( $files ) {
     $files = func_get_args();
-    foreach( $files as $file )
+    foreach ( $files as $file )
         require_once( 'library/' . $file . '.php' );
 }
 
 
 // include utility functions
-require_multi( 'core', 'metabox', 'images', 'paginate' );
-
-
-// include metabox features
-require_multi( 'metabox' );
-
-
-// include feature functions
-require_multi( 'showcase', 'button', 'calculator' );
+require_multi( 'core', 'metabox', 'images', 'paginate', 'metabox', 'showcase', 'button', 'calculator' );
 
