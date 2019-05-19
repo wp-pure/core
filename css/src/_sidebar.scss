@@ -3,7 +3,6 @@
 .quarter.sidebar {
 	@include respond-to( $bp-m ) {
 		padding-top: 20px;
-		margin-left: -20px;
 	}
 	
 	.widget-title {
