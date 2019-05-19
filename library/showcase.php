@@ -1,6 +1,7 @@
 <?php
 
 
+// function to use on front-end templates to output the showcase.
 function the_showcase() {
 
 	// get the slides
@@ -60,4 +61,52 @@ function the_showcase() {
 		<?php
 	}
 }
+
+
+
+// add the showcase metabox
+function showcase_metabox( $meta_boxes ) {
+
+    $showcase_metabox = new_cmb2_box( array(
+        'id' => 'showcase_metabox',
+        'title' => 'Showcase',
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ) );
+
+    $showcase_metabox_group = $showcase_metabox->add_field( array(
+        'id' => CMB_PREFIX . 'showcase',
+        'type' => 'group',
+        'options' => array(
+            'add_button' => __('Add Slide', 'cmb2'),
+            'remove_button' => __('Remove Slide', 'cmb2'),
+            'group_title'   => __( 'Slide {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable' => true, // beta
+        )
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Image/Video',
+        'id'   => 'image',
+        'type' => 'file',
+        'preview_size' => array( 200, 100 )
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Alt text',
+        'desc' => 'Specify alt text for this slide.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Link',
+        'id'   => 'link',
+        'type' => 'text',
+    ) );
+
+}
+add_filter( 'cmb2_init', 'showcase_metabox' );
+
 
