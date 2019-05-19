@@ -1,6 +1,6 @@
 ## wp-pure
 
-A custom WordPress theme framework to jumpstart new themes.
+A custom WordPress theme framework to jump start the development of a new theme.
 
 ```shell
 cd wp-content/themes/
