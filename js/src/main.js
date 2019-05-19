@@ -36,20 +36,9 @@ jQuery(document).ready(function($){
 
 	});
 
-	// accordion box title
-	$( '.accordion-box-title' ).click(function(){
-		$( this ).parent( '.accordion-box' ).children( '.accordion-box-content' ).slideToggle( 600 );
-	});
 
-	$( 'button[data-url]' ).click(function(){
-		window.location.href = $( this ).attr( 'data-url' );
-	});
+	// open magnific-popup when people click a certain class.
+	$( '.lightbox' ).magnificPopup({ 'type': 'iframe' });
 
-	$( '.lightbox-iframe' ).magnificPopup({ 'type': 'iframe' });
-
-	$( '.quick-links select' ).on( 'change', function(){
-		location.href = $(this).find( ':selected' ).val();
-	});
-	
 });
 
