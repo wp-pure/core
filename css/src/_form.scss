@@ -22,7 +22,7 @@ button, input[type=submit] {
 .gform_wrapper {
 	
 	// some global field styles for donate form only
-	.donate-form {
+	.short-form {
 		.gfield {
 			margin: 10px 0 !important;
 
@@ -79,7 +79,7 @@ button, input[type=submit] {
 
 	// some styles for radio button fields
 	.gfield {
-		&.donate-type, &.donate-amount {
+		&.inline-radio, &.donate-amount {
 			.gfield_radio {
 				width: auto !important;
 
@@ -96,24 +96,10 @@ button, input[type=submit] {
 			}
 		}
 
-		&.donate-note {
+		&.conditional-note {
 			font-size: .8em;
 			margin-top: -20px !important;
 			margin-bottom: 20px !important;
-		}
-	
-		@include respond-to( 768px ) {
-			&.donate-type {
-				.gfield_radio li {
-					width: 150px;
-				}
-			}
-
-			&.donate-amount {
-				.gfield_radio li {
-					width: 88px;
-				}
-			}
 		}
 	}
 	
