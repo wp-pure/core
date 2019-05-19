@@ -1,7 +1,7 @@
 
 
 .quarter.sidebar {
-	@include respond-to( 768px ) {
+	@include respond-to( $bp-m ) {
 		padding-top: 20px;
 		margin-left: -20px;
 	}

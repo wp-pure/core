@@ -4,7 +4,7 @@
 	padding: 20px;
 }
 
-@include respond-to( 768px ) {
+@include respond-to( $bp-m ) {
 	.quarter, .third, .half, .two-third, .three-quarter, .twenty, .forty, .thirty {
 		float: left;
 	}
