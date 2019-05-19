@@ -3,6 +3,8 @@
 .quarter.sidebar {
 	@include respond-to( $bp-m ) {
 		padding-top: 20px;
+		margin-right: 3%;
+		width: 21%;
 	}
 	
 	.widget-title {
@@ -37,5 +39,5 @@
 			}
 		}
 	}
-
 }
+
