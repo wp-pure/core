@@ -28,7 +28,7 @@ function theme_options_page() {
 		<h1 class="wp-heading-inline">Theme Options</h1>
 		<p>Manage the basic settings for the theme used on <?php bloginfo('name'); ?>.</p>
 		<hr>
-        <style>.ta-field { padding: 10px; min-width: 280px; width: 100%; }</style>
+        <style>.pure-field { padding: 10px; min-width: 280px; width: 100%; }</style>
         <form method="post" action="options.php">
         <?php
 
@@ -37,7 +37,7 @@ function theme_options_page() {
 
         ?>
         <p><label for="pure_address">Address</label><br>
-            <textarea class="codemirror ta-field" id="pure_address" name="pure_address" style="height: 100px;"><?php echo get_option( 'pure_address' ); ?></textarea></p>
+            <textarea class="pure-field" id="pure_address" name="pure_address" style="height: 100px;"><?php echo get_option( 'pure_address' ); ?></textarea></p>
         <?php
 
         // add the submit button.
