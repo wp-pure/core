@@ -69,9 +69,11 @@ header {
 					width: 100%;
 					transition: 400ms background-color ease-in-out;
 					background-color: transparent;
+					text-align: center;
 
 					@include respond-to( $bp-m ) {
 						display: inline-block;
+						text-align: left;
 						padding: 15px 10px;
 					}
 
