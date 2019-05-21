@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "jpederson/twitter-aggregator": "*"
+        "pure/twitter-aggregator": "*"
     }
 }
