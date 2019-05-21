@@ -8,5 +8,8 @@
             "name": "James Pederson",
             "email": "james@jpederson.com"
         }
-    ]
+    ],
+    "require": {
+        "jpederson/twitter-aggregator": "*"
+    }
 }

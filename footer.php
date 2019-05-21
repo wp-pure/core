@@ -14,8 +14,7 @@ $admin_email = get_option( 'admin_email' );
 	</section>
 	
 	<footer class="footer">
-		<p><strong><?php bloginfo( 'site_name' ) ?></strong><br>
-			Email: <a href="mailto:<?php print $admin_email ?>"><?php print $admin_email ?></a></p>
+		<?php print apply_filters( 'the_content', get_option( 'pure_address' ) ); ?>
 		<p class="copyright">Copyright &copy; <?php print date( 'Y' ) ?></p>
 	</footer>
 

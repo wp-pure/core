@@ -3,7 +3,9 @@
 Home/catch-all template
 */
 
-get_header(); ?>
+get_header(); 
+
+?>
 
 
 	<div class="content-wide" role="main">
