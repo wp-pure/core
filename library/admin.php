@@ -8,6 +8,7 @@ function theme_options_menu() {
 add_action( 'admin_menu', 'theme_options_menu', 1 );
 
 
+
 // register our theme options settings
 function theme_options_register_settings() {
 

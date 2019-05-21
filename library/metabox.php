@@ -3,7 +3,7 @@
 
 // get CMB value
 function get_cmb_value( $field ) {
-    return get_post_meta( get_the_ID(), CMB_PREFIX . $field, 1 );
+    return get_post_meta( get_the_ID(), $field, 1 );
 }
 
 
