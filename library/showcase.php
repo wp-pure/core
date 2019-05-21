@@ -5,7 +5,7 @@
 function the_showcase() {
 
 	// get the slides
-	$slides = get_post_meta( get_the_ID(), CMB_PREFIX . "showcase", 1 );
+	$slides = get_post_meta( get_the_ID(), "showcase", 1 );
 
 	if ( !empty( $slides ) ) {
 		?>
@@ -76,7 +76,7 @@ function showcase_metabox( $meta_boxes ) {
     ) );
 
     $showcase_metabox_group = $showcase_metabox->add_field( array(
-        'id' => CMB_PREFIX . 'showcase',
+        'id' => 'showcase',
         'type' => 'group',
         'options' => array(
             'add_button' => __('Add Slide', 'cmb2'),
