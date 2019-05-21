@@ -1,5 +1,5 @@
 {
-    "name": "pure/core",
+    "name": "wp-pure/core",
     "description": "A custom WordPress theme framework to jumpstart new themes.",
     "type": "project",
     "license": "MIT",
@@ -10,6 +10,6 @@
         }
     ],
     "require": {
-        "pure/twitter-aggregator": "*"
+        "wp-pure/twitter-aggregator": "*"
     }
 }
