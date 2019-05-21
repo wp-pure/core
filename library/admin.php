@@ -27,7 +27,7 @@ function theme_options_page() {
 		<h1 class="wp-heading-inline">Theme Options</h1>
 		<p>Manage the basic settings for the theme we use on <?php bloginfo('name'); ?>.</p>
 		<hr>
-        <style>.ta-field { padding: 5px 10px; min-width: 280px; width: 60%; }</style>
+        <style>.ta-field { padding: 5px 10px; min-width: 280px; width: 80%; }</style>
         <form method="post" action="options.php">
         <?php
 
