@@ -19,4 +19,3 @@ require_multi( 'core', 'admin', 'metabox', 'images', 'paginate', 'metabox', 'sho
 
 // require composer autoload
 require_once 'vendor/autoload.php';
-
