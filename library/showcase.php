@@ -109,4 +109,3 @@ function showcase_metabox( $meta_boxes ) {
 }
 add_filter( 'cmb2_init', 'showcase_metabox' );
 
-

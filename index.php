@@ -7,7 +7,6 @@ get_header();
 
 ?>
 
-
 	<div class="content-wide" role="main">
 
 		<?php
@@ -16,7 +15,6 @@ get_header();
 		} else {
 			?><h1 class="post-title">Our Blog</h1><?php
 		}
-		
 
 		if ( have_posts() ) : 
 
